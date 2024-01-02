@@ -11,8 +11,14 @@ without developer involvement.
 
 #### Build
 
+Docker helps design and build container images.
 
+
+docker build -t myapp:0.0.1 --target server .
 
 
 #### Deployments
+
+Can help wih the release stage, using the deployments to manage a desired state
+for your application and provide it with configuration through environment variables.
 
