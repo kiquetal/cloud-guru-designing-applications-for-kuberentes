@@ -4,4 +4,6 @@
 
     Binds itsel directly to ports, where itlisten and awaits incoming traffic.
 
+    Only 1 process can listen on a port per host.
+
 
