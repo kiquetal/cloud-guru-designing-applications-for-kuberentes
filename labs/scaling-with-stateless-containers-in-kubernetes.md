@@ -19,7 +19,7 @@ kind: Deployment
 metadata:
   name: pirate-day-dep
 spec:
-  replicas: 3
+  replicas: 5
   selector:
     matchLabels:
       app: pirate-day-frontend
@@ -35,8 +35,8 @@ spec:
         - containerPort: 3000
         volumeMounts:
         - name: pirate-config
-          mountPath: /usr/src/app/.env
-          subPath: .env
+          mountPath: /usr/src/app/build/__ENV.js
+          subPath: __ENV.js
         - name: tmp
           mountPath: /tmp
           readOnly: false
